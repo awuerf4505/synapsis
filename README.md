@@ -1,5 +1,5 @@
 # Synapsis
-###By: Alison W.
+####By: Alison W.
 
 ##Objective
 ###Two players work together to complete all of the synapses in the brain (blue squares) in under 30 seconds.

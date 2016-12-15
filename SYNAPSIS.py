@@ -422,7 +422,7 @@ while not done:
             text2 = MY_FONT.render("Your Score Was: " + str(score) + "/14", True, BLACK)
             text3 = MY_FONT2.render("Press SPACE to restart.", True, BLACK)
             screen.blit(text1, [475, 150])
-            screen.blit(text2, [475, 225])
+            screen.blit(text2, [455, 225])
             screen.blit(text3, [225, 250])
             screen.blit(test_image3, (500,350)) 
             screen.blit(test_image4, (642,350)) 

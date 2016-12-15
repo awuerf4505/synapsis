@@ -172,7 +172,7 @@ def setup():
     collidables_two = walls + purple_doors
 
     stage = START
-    time_remaining = 30
+    time_remaining = 60
     ticks = 0
     
 # Game loop
@@ -193,8 +193,12 @@ while not done:
                     if event.key == pygame.K_SPACE:
                         stage = PLAYING                  
              elif stage == END:
-                    if event.key == pygame.K_SPACE:
-                        setup()
+                    if win ==True:
+                        if event.key == pygame.K_SPACE:
+                            setup()
+                    if win == False:
+                        if event.key == pygame.K_SPACE:
+                            setup()
     '''Key Functions'''
     if stage == PLAYING:
         pressed = pygame.key.get_pressed()
@@ -410,7 +414,7 @@ while not done:
             screen.fill(WHITE)
             text1 = MY_FONT2.render("YAY", True, BLACK)
             text2 = MY_FONT2.render("YOU WON!!!", True, BLACK)
-            text3 = MY_FONT2.render("Press SPACE to restart.", True, BLACK)
+            text3 = MY_FONT2.render("Press SPACE for Level 2.", True, BLACK)
             screen.blit(text1, [550, 100])
             screen.blit(text2, [425, 175])
             screen.blit(text3, [225, 250])
